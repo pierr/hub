@@ -1,0 +1,25 @@
+{
+  "api": {
+    "url": "localhost:7777"
+  },
+  "ui": {
+    "position": 330,
+    "background-color": "white",
+    "element": null,
+    "tagName": "div",
+    "css": "hub"
+  },
+  "data": {
+    "maxAge": 3600000,
+    "mock": {
+      "user": {
+        "firstName": "Pierre",
+        "lastName": "Besson"
+      },
+      "applications": [
+        {"idn": "IDN001", "name": "Application1", "icon": "fa-arrow"},
+        {"idn": "IDN002", "name": "Application2", "icon": "fa-circle"}
+      ]
+    }
+  }
+}
