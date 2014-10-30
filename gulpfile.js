@@ -10,7 +10,7 @@ gulp.task('templates', function() {
     .pipe(jade({
       client: true
     }))
-    .pipe(wrapCommonjs({moduleExports: "template"}))
+    .pipe(wrapCommonjs({autoRequire: true, moduleExports: "template"}))
     .pipe(gulp.dest('./lib/templates/'));
 });
 
