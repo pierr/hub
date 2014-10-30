@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/pierr/hub",
   "dependencies": {
+    "browserify": "^6.2.0",
     "gulp": "^3.8.9",
-    "gulp-jade": "^0.9.0"
+    "gulp-jade": "^0.9.0",
+    "vinyl-source-stream": "^1.0.0"
   }
 }
