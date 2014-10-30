@@ -1,0 +1,25 @@
+{
+  "name": "hub",
+  "version": "0.0.0",
+  "description": "Hub in order to be use inside another application.",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pierr/hub.git"
+  },
+  "keywords": [
+    "hub",
+    "node",
+    "cors",
+    "design"
+  ],
+  "author": "Pierre Besson <pierre.besson7@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pierr/hub/issues"
+  },
+  "homepage": "https://github.com/pierr/hub"
+}
