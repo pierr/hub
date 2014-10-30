@@ -5,10 +5,12 @@ var gulp = require('gulp');
  */
 gulp.task('templates', function() {
   var jade = require('gulp-jade');
+  var wrapCommonjs = require('gulp-wrap-commonjs');
   gulp.src('./lib/templates/*.jade')
     .pipe(jade({
       client: true
     }))
+    .pipe(wrapCommonjs({moduleExports: "template"}))
     .pipe(gulp.dest('./lib/templates/'));
 });
 
