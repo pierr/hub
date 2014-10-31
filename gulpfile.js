@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var concat = require('gulp-concat');
 /**
  * Build all the jade templates.
  * @return {function}
@@ -23,3 +24,15 @@ gulp.task('browserify', ['templates'] ,function() {
     .pipe(gulp.dest('./dist/'))
     .pipe(gulp.dest('./example/'));
 });
+
+gulp.task('style', function(){
+  var stylus = require('gulp-stylus');
+  gulp.src('./lib/styles/*.styl')
+    .pipe(stylus())
+    .pipe(concat('hub.css'))
+    .pipe(gulp.dest('./dist/'))
+    .pipe(gulp.dest('./example/'));
+});
+
+// The default task (called when you run `gulp` from cli)
+gulp.task('default', ['browserify', 'style']);
