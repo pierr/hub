@@ -27,6 +27,8 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 build/
-dist/*.js
-example/*.js
 lib/templates/*.js
+dist/*.js
+dist/*.css
+example/*.js
+example/*.css
