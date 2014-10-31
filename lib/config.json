@@ -7,7 +7,7 @@
     "background-color": "white",
     "element": null,
     "tagName": "div",
-    "css": "hub"
+    "className": "hub"
   },
   "data": {
     "maxAge": 3600000,
