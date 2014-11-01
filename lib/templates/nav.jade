@@ -1,10 +1,9 @@
-items = []
-nav.class("hub-container")
+nav(class="hub-container" data-hub-content)
   h4=title
   div.user
     div.photo
       img(src=user.photo)
-    div.title= user.name
+    div.title=user.name
   ul.items
     for item in items
       li= item
