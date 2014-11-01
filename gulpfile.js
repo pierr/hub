@@ -33,6 +33,28 @@ gulp.task('style', function(){
     .pipe(gulp.dest('./dist/'))
     .pipe(gulp.dest('./example/'));
 });
+//
+var browserSync = require('browser-sync');
+var reload = browserSync.reload;
+// Watch Files For Changes & Reload
+gulp.task('serve', ['browserify','style'], function () {
+  browserSync({
+    notify: false,
+    // Run as an https by uncommenting 'https: true'
+    // Note: this uses an unsigned certificate which on first access
+    //       will present a certificate warning in the browser.
+    // https: true,
+    server: {
+      baseDir: ['example']
+    }
+  });
+
+  gulp.watch(['lib/**/*.js'],['browserify',reload]);
+  gulp.watch(['lib/templates/*.jade'], ['templates', reload]);
+  gulp.watch(['lib/styles/*.{styl,css}'], ['style', reload]);
+  //gulp.watch(['app/scripts/**/*.js'], jshint);
+  //gulp.watch(['app/images/**/*'], reload);
+});
 
 // The default task (called when you run `gulp` from cli)
 gulp.task('default', ['browserify', 'style']);
