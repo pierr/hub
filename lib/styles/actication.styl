@@ -15,6 +15,9 @@
     border: none
     outline: none
     color: blue
+    .open
+      display: none
+      visibility: hidden
     button.hub-button
       height:50px
       background: #fff
@@ -22,13 +25,26 @@
       border:1px solid #ccc
       margin:0 10px 0
       box-shadow: 0 0 2px  #fff inset
-     -webkit-transform: perspective(100px) rotateX(30deg)
-     -moz-transform: perspective(100px) rotateX(30deg)
+      -webkit-transform: perspective(100px) rotateX(30deg)
+      -moz-transform: perspective(100px) rotateX(30deg)
       span.label
         font-size: 0px
         line-height: 0px
-      :hover
-        span.label
-          color:green
-          font-size:15px
-          line-height: 15px
+    button.hub-button:hover span.label
+        color:green
+        font-size:15px
+        line-height: 15px
+/*
+div.hub-activator
+  button.hub-button(data-action='activation')
+    width: 60px
+    height: 60px
+    background-image: none
+    background-color: transparent
+    border: none
+    padding: 0
+    -webkit-transition: background-color 0.2s ease-out
+    transition: background-color 0.2s ease-out
+    -webkit-tap-highlight-color: transparent
+    span.label Hub
+*/

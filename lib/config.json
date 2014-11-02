@@ -8,16 +8,18 @@
     "element": null,
     "tagName": "div",
     "className": "hub",
-    "activatorSelector": "button[data-action]"
+    "activatorSelector": "button[data-action]",
+    "hubSelector": "body"
   },
   "data": {
     "maxAge": 3600000,
     "mock": {
+      "title": "MockTitle",
       "user": {
         "firstName": "Pierre",
         "lastName": "Besson"
       },
-      "applications": [
+      "items": [
         {"idn": "IDN001", "name": "Application1", "icon": "fa-arrow"},
         {"idn": "IDN002", "name": "Application2", "icon": "fa-circle"}
       ]
