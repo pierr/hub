@@ -1,4 +1,4 @@
 mixin item_template(data)
   div(class='item',data-id=data.idn)
-    span=data.name
+    a(href=data.link)=data.name
     i(class=data.icon)
