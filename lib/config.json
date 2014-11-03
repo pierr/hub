@@ -14,7 +14,7 @@
   "data": {
     "maxAge": 3600000,
     "mock": {
-      "title": "MockTitle",
+      "title": "Hub application",
       "user": {
         "firstName": "Pierre",
         "lastName": "Besson"

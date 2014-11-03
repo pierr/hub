@@ -52,6 +52,7 @@ gulp.task('serve', ['browserify','style'], function () {
   gulp.watch(['lib/**/*.js'],['browserify',reload]);
   gulp.watch(['lib/templates/*.jade'], ['templates', reload]);
   gulp.watch(['lib/styles/*.{styl,css}'], ['style', reload]);
+  gulp.watch(['lib/*.json'], ['browserify',reload]);
   //gulp.watch(['app/scripts/**/*.js'], jshint);
   //gulp.watch(['app/images/**/*'], reload);
 });
