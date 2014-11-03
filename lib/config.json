@@ -16,8 +16,8 @@
     "mock": {
       "title": "Hub application",
       "user": {
-        "firstName": "Pierre",
-        "lastName": "Besson"
+        "name": "Pierre Besson",
+        "photo": "https://pbs.twimg.com/profile_images/378800000475446686/503bef212d7997fa4b33cc99f72f7471_400x400.png"
       },
       "items": [
         {"idn": "IDN001", "name": "Application1", "icon": "fa-arrow"},

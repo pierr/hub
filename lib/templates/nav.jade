@@ -1,11 +1,11 @@
+include ./user.jade
+include ./item.jade
 nav(class="hub-container" data-hub-content)
   h4=title
-  div.user
-    div.photo
-      img(src=user.photo)
-    div.title=user.name
-  ul.items
+  button(class="btn btn-close", data-action='close') x
+  +user_template(user)
+  div.items
     for item in items
-      li= item.name
+      +item_template(item)
     else
-      li sorry, items
+      div sorry, items
