@@ -1,6 +1,7 @@
 {
   "api": {
-    "url": "localhost:7777"
+    "url": "localhost:7777",
+    "method": "GET"
   },
   "ui": {
     "position": 330,
