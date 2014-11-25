@@ -1,7 +1,8 @@
 {
   "api": {
     "url": "http://localhost:7777/user",
-    "method": "GET"
+    "method": "GET",
+    "criteria": {}
   },
   "ui": {
     "position": 330,
@@ -13,15 +14,15 @@
     "hubSelector": "body"
   },
   "data": {
-    "maxAge": 3600000,
+    "maxAge": 0,
     "mock": {
       "title": "Hub application",
       "user": {
         "name": "Pierre Besson",
-        "photo": "https://pbs.twimg.com/profile_images/378800000475446686/503bef212d7997fa4b33cc99f72f7471_400x400.png"
+        "photo": "data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
       },
       "items": [
-        {"idn": "IDN001", "name": "Application1", "icon": "fa-arrow", "link": "http://google.com"},
+        {"idn": "IDN001", "name": "Application1", "icon": "fa-arrow", "link": "http://google.com", },
         {"idn": "IDN002", "name": "Application2", "icon": "fa-circle", "link": "http://github.com"}
       ]
     }
