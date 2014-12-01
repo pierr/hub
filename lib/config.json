@@ -6,7 +6,7 @@
   },
   "ui": {
     "position": 330,
-    "background-color": "white",
+    "background-color": "rgba(5,29,49,0.5)",
     "element": null,
     "tagName": "div",
     "className": "hub",
