@@ -1,9 +1,12 @@
 include ./user.jade
 include ./item.jade
 nav(class="hub-container" data-hub-content)
-  h4=title
   button(class="btn btn-close", data-action='close') x
   +user_template(user)
+
+  div.principalItem
+    +item_template(mainItem)
+  h4="Autres applications"
   div.items
     for item in items
       +item_template(item)

@@ -1,4 +1,4 @@
-var data = {
+var data = require('./tmp/example.json');/*{
   "title": "Hub application from server",
   "user": {
     "name": "Pierr Besson",
@@ -15,7 +15,7 @@ var data = {
     "icon": "fa-circle",
     "link": "http://github.com"
   }]
-};
+};*/
 
 
 
