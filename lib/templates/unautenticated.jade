@@ -1,6 +1,11 @@
-p="Disposez d'un accès rapide et centralisé aux applications du notariat et en un clic"
-form(name="loginform", action=action, method="post")
-  input(type="hidden", name="SAMLRequest", value=SAMLRequest)
-  input(type="hidden", name="RelayState", value=RelayState)
-  button(data-action="autenticated",type="submit")="S'autentifier"
+include ./user.jade
+include ./item.jade
+nav(class="hub-container" data-hub-content)
+  button(class="btn btn-close", data-action='close') x
+  p="Disposez d'un accès rapide et centralisé aux applications du notariat et en un clic"
+  form(name="loginform", action=action, method="post")
+    div.form
+      input(type="hidden", name="SAMLRequest", value=SAMLRequest)
+      input(type="hidden", name="RelayState", value=RelayState)
+      button(data-action="autenticated",type="submit")="S'autentifier"
 

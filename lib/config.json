@@ -1,6 +1,6 @@
 {
   "api": {
-    "url": "http://localhost:7777/user",
+    "url": "http://localhost:7777/usera",
     "method": "GET",
     "criteria": {}
   },
