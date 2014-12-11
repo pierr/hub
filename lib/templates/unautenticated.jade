@@ -1,11 +1,12 @@
-include ./user.jade
-include ./item.jade
+include ./logo.jade
 nav(class="hub-container" data-hub-content)
   button(class="btn btn-close", data-action='close') x
-  p="Disposez d'un accès rapide et centralisé aux applications du notariat et en un clic"
+  +logo()
+  p="Disposez d'un accès rapide et centralisé aux applications du notariat, en un clic"
+  p="Vous n'êtes plus connectés"
   form(name="loginform", action=action, method="post")
     div.form
       input(type="hidden", name="SAMLRequest", value=SAMLRequest)
       input(type="hidden", name="RelayState", value=RelayState)
-      button(data-action="autenticated",type="submit")="S'autentifier"
+      button(data-action="autenticated",type="submit")="Me connecter"
 
