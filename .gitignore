@@ -32,3 +32,4 @@ dist/*.js
 dist/*.css
 example/*.js
 example/*.css
+.DS_Store
