@@ -13,7 +13,7 @@ gulp.task('templates', function() {
     .pipe(gulp.dest('./lib/templates/'));
 });
 
-gulp.task('browserify', ['templates'] ,function() {
+gulp.task('browserify' ,function() {
   var browserify = require('browserify');
   var source = require('vinyl-source-stream');
   return browserify('./lib/index.js')
@@ -37,7 +37,7 @@ gulp.task('style', function(){
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 // Watch Files For Changes & Reload
-gulp.task('serve', ['browserify','style'], function () {
+gulp.task('serve', ['templates','browserify','style'], function () {
   browserSync({
     notify: false,
     // Run as an https by uncommenting 'https: true'
