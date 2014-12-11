@@ -4,7 +4,9 @@
   "description": "Hub in order to be use inside another application.",
   "main": "app/index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build": "./node_modules/gulp/bin/gulp.js",
+    "serve": "./node_modules/gulp/bin/gulp.js serve"
   },
   "repository": {
     "type": "git",
