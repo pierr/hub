@@ -1,4 +1,5 @@
-var data = require('./tmp/example.json');/*{
+var data = require('./tmp/example.json');
+/*{
   "title": "Hub application from server",
   "user": {
     "name": "Pierr Besson",
@@ -24,11 +25,25 @@ function getUser(request, reply) {
   reply(data);
 }
 
+function getUnauthorized(request, reply) {
+  console.log('Get References');
+  reply({
+    action: "yoooo",
+    SAMLRequest: "21231321231321"
+  }).code(401);
+}
+
 var routes = [{
   method: 'GET',
   path: '/user',
   config: {
     handler: getUser
+  }
+}, {
+  method: 'GET',
+  path: '/unauthorized',
+  config: {
+    handler: getUnauthorized
   }
 }];
 module.exports = routes;
