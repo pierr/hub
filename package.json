@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha",
     "build": "./node_modules/gulp/bin/gulp.js",
-    "serve": "./node_modules/gulp/bin/gulp.js serve"
+    "serve": "./node_modules/gulp/bin/gulp.js serve",
+    "api": "node api"
   },
   "repository": {
     "type": "git",
