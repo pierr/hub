@@ -36,11 +36,11 @@ In the hub directory, do the following actions:
 
 ## Build
  
-Launch the following command: `npm run build`
+Launch the following command: `npm run build` or `gulp`
 
 ## Serve an example with a watcher
 
-Launch the following command : `npm run serve`, this should launch your default browser on the port 3000, and reload the page when you make a change in the `lib` directory (it also relaunch the build).
+Launch the following command : `npm run serve` or 'gulp serve', this should launch your default browser on the port 3000, and reload the page when you make a change in the `lib` directory (it also relaunch the build).
 
 
 ## API
