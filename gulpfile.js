@@ -58,4 +58,4 @@ gulp.task('serve', ['templates','browserify','style'], function () {
 });
 
 // The default task (called when you run `gulp` from cli)
-gulp.task('default', ['browserify', 'style']);
+gulp.task('default', ['templates', 'browserify', 'style']);
